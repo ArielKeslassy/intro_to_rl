@@ -92,8 +92,8 @@ In this strategy we use the expert's world knowledge and understanding of the ta
 
 On this embedding space we perform the K-Center Greedy algorithm:
 1. Pick a random point $c$ and add it to the centers $S$.
-2. For every point $p$ in the dataset, find the nearest center: $c\_min = d(p, S) = \min_c \{dist(p, c)\}$
-3. Pick a new point $p$ which is the furthest from $c\_min$: $p\_far = \max_p \{d(p, S)\}$
+2. For every point $p$ in the dataset, find the nearest center: $c_{min} = d(p, S) = \min_c \{dist(p, c)\}$
+3. Pick a new point $p$ which is the furthest from $c_{min}$: $p_{far} = \max_p \{d(p, S)\}$
 4. Add the new point as the next center: $S = S \cup \{p\_far\}$
 
 This algorithm outputs $k$ centers that cover most of the data landscape (minimizing the distance of any point to the closest center). We also apply the same stratification method from section B5.2 to balance the samples before applying this method.
@@ -126,7 +126,7 @@ GradMatch (Killamsetty et al., ICML 2021) is a data selection strategy that aims
 
 We used these methods to create subsets of sizes [2, 5, 10, 20, 50, 100, 500, 1000]. We trained the same imitation model (section B2) from scratch on all these different subsets created by each method. We performed this process along 5 different seeds and averaged the results to avoid outlier results.
 
-![Few-Shot Comparison: Environment Mean Reward](images/image8.png)
+![Few-Shot Comparison: Environment Mean Reward](images/image11.png)
 
 **Key Findings:**
 1. Most algorithms consistently out-performed the random baseline.
