@@ -16,9 +16,9 @@ To generate expert demonstrations, we used the **Stable-Baselines3 (SB3)** libra
   The model was trained with a fixed learning rate of `3e-4` (for training stability) and a network architecture of `[256, 256]` — making sure it has sufficient parameters to learn the task while not being over-parametrized.
 - **Performance:** It successfully met the expert criteria by achieving an average reward greater than 200 over the evaluation episodes.
 
-![Expert Reward Distribution](images/image1.png)
+![Expert Reward Distribution](images/image7.png)
 
-![Expert Performance Across Seeds](images/image2.png)
+![Expert Performance Across Seeds](images/image8.png)
 
 ---
 
@@ -43,18 +43,21 @@ For too small datasets, the imitation model didn't have enough information about
 **On the larger dataset we can observe generalization.**
 
 ### Training Curves — 100 Samples
-![Behavioral Cloning Training — 100 Samples](images/image3.png)
+![Behavioral Cloning Training — 100 Samples](images/image6.png)
 
 ### Training Curves — 500 Samples
-![Behavioral Cloning Training — 500 Samples](images/image4.png)
+![Behavioral Cloning Training — 500 Samples](images/image5.png)
 
 ### Training Curves — 5000 Samples
-![Behavioral Cloning Training — 5000 Samples](images/image5.png)
+![Behavioral Cloning Training — 5000 Samples](images/image1.png)
 
 The 5000 examples imitation model achieved results **on par with the expert.**
 
 ### Reward Distribution & Seed Comparison
-![Expert vs Imitation Reward Distribution and Seed Performance](images/image6.png)
+![Expert vs Imitation Reward Distribution and Seed Performance](images/image7.png)
+![Expert vs Imitation Reward Distribution and Seed Performance](images/image10.png)
+![Expert vs Imitation Reward Distribution and Seed Performance](images/image4.png)
+![Expert vs Imitation Reward Distribution and Seed Performance](images/image2.png)
 
 ---
 
@@ -66,7 +69,7 @@ Our experiments demonstrated a direct correlation between the volume of expert d
 - Starting on 1,000 samples, the model was finally able to consistently solve the task.
 - The model trained on 10,000 samples quickly converged, achieving over 90% validation accuracy and reliably landing the spacecraft during evaluation.
 
-![Effects of Dataset Size on Behavioral Cloning](images/image7.png)
+![Effects of Dataset Size on Behavioral Cloning](images/image3.png)
 
 ---
 
