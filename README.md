@@ -94,7 +94,7 @@ On this embedding space we perform the K-Center Greedy algorithm:
 1. Pick a random point $c$ and add it to the centers $S$.
 2. For every point $p$ in the dataset, find the nearest center: $c_{min} = d(p, S) = \min_c \{dist(p, c)\}$
 3. Pick a new point $p$ which is the furthest from $c_{min}$: $p_{far} = \max_p \{d(p, S)\}$
-4. Add the new point as the next center: $S = S \cup \{p\_far\}$
+4. Add the new point as the next center: $S = S \cup \{p_{far}\}$
 
 This algorithm outputs $k$ centers that cover most of the data landscape (minimizing the distance of any point to the closest center). We also apply the same stratification method from section B5.2 to balance the samples before applying this method.
 
