@@ -1,8 +1,5 @@
 # Reinforcement Learning – Imitation Learning – Assignment 1
 
-**Student 1:** Yaara Shterenbaum — 212857239  
-**Student 2:** Ariel Keslassy — 312169527
-
 ---
 
 ## Overview and Assignment Goal
